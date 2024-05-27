@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Venta de Arroz con Leche</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #f7f4f3;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .producto {
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .producto img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .boton-comprar {
+      display: block;
+      width: 200px;
+      margin: auto;
+      padding: 10px;
+      background-color: #86d731;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+    .boton-comprar:hover {
+      background-color: #ff814f;
+    }
+    .lugares-venta {
+      margin-top: 50px;
+    }
+    .lugar {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .lugar h3 {
+      margin-top: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <marquee behavior= alternate>  <h1>Arroz con Leche</h1> </marquee>
+  </header>
+  
+  <div class="container">
+    <div class="producto">
+      <h2>Arroz con Leche Tradicional</h2>
+      <img src="arroz tradicional.jpg" width="200" height="350" alt="Arroz con Leche Tradicional"> 
+      <p>Precio: $25.00 Por vaso</p>
+      <a href="https://wa.link/ackcdx" class="boton-comprar">Comprar por WhatsApp</a>
+    </div>
+    <div class="producto">
+      <h2>Arroz con Leche y Canela</h2>
+      <img src="arroz con canela.jpg" width="400" height="400" alt="Arroz con Leche con Canela">  
+      <p>Precio: $25.00 Por vaso</p>
+      <a href="https://wa.link/ackcdx" class="boton-comprar">Comprar por WhatsApp</a>
+    </div>
+    <!-- Agrega más productos aquí si lo deseas -->
+
+    <div class="lugares-venta">
+      <h2>Lugares de Venta</h2>
+      <div class="lugar">
+        <h3>Tienda Principal</h3>
+        <p>Dirección: Calle Capilla #24</p>
+        <p>Teléfono: 374-111-8895</p>
+      </div>
+      <div class="lugar">
+        <h3>Open de la Plaza principal</h3>
+        <p>Dirección: calle Porfirio diaz #</p>
+        <p>Teléfono: 098-765-4321</p>
+      </div>
+      <div class="lugar">
+        <h3>Abarrote doña Biki</h3>
+        <p>Dirección: calle Capilla #44</p>
+        <p>Teléfono: 098-765-4321</p>
+      </div>
+      <title>Carrito de Compras Flotante</title>
+      <style>
+        
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 20px;
+              background-color: #d7cccc;
+          }
+          h1 {
+              color: #333;
+          }
+          .product {
+              border: 1px solid #ddd;
+              padding: 15px;
+              margin-bottom: 20px;
+              background-color: #fff;
+              border-radius: 8px;
+          }
+          .product h2 {
+              margin: 0;
+          }
+          .product p {
+              margin: 5px 0;
+          }
+          .product button {
+              padding: 10px;
+              background-color: #28a745;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+          }
+          .product button:hover {
+              background-color: #218838;
+          }
+          .cart {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              width: 300px;
+              max-height: 300px;
+              overflow-y: auto;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              padding: 15px;
+              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+              z-index: 1000;
+          }
+          .cart h2 {
+              margin-top: 0;
+              font-size: 18px;
+          }
+          .cart-item {
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px solid #ddd;
+              padding: 10px 0;
+          }
+          .cart-item:last-child {
+              border-bottom: none;
+          }
+          .cart-item span {
+              display: inline-block;
+          }
+          .cart-item button {
+              padding: 5px;
+              background-color: #d32741;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 14px;
+          }
+          .cart-item button:hover {
+              background-color: #c82333;
+          }
+          .total {
+              font-weight: bold;
+              margin-top: 10px;
+              font-size: 18px;
+              text-align: right;
+          }
+      </style>
+  </head>
+  
+  <body>
+      <h1>Carrito de Compras</h1>
+  
+      <div class="product">
+          <h2>Arroz Con Leche Tradicional</h2>
+          <br>
+          <div < align="rigth">
+            <img src="arroz tradicional.jpg" width="100" height="150"
+          </align>
+          <p>Precio: $25.00</p>
+          <button onclick="addToCart('Producto 1', 10)">Agregar al carrito</button>
+      </div>
+  
+      <div class="product">
+          <h2>Arroz Con Leche y Canela</h2>
+          <p>Precio: $25.00</p>
+          <button onclick="addToCart('Producto 2', 15)">Agregar al carrito</button>
+      </div>
+  
+  
+      <div class="cart" id="cart">
+          <h2>Carrito de Compras</h2>
+          <div id="cart-items"></div>
+          <div class="total" id="cart-total"></div>
+      </div>
+  
+      <script>
+          let cart = [];
+  
+          function addToCart(productName, productPrice) {
+              const existingProduct = cart.find(item => item.name === productName);
+              if (existingProduct) {
+                  existingProduct.quantity += 1;
+              } else {
+                  cart.push({ name: productName, price: productPrice, quantity: 1 });
+              }
+              updateCart();
+          }
+  
+          function updateCart() {
+              const cartItemsElement = document.getElementById('cart-items');
+              const cartTotalElement = document.getElementById('cart-total');
+              cartItemsElement.innerHTML = '';
+              let total = 0;
+  
+              cart.forEach(item => {
+                  const cartItem = document.createElement('div');
+                  cartItem.className = 'cart-item';
+                  cartItem.innerHTML = `
+                      <span>${item.name} - $${item.price} x ${item.quantity}</span>
+                      <button onclick="removeFromCart('${item.name}')">Eliminar</button>
+                  `;
+                  cartItemsElement.appendChild(cartItem);
+                  total += item.price * item.quantity;
+              });
+  
+              cartTotalElement.innerHTML = Total: $${total.toFixed(2)};
+          }
+  
+          function removeFromCart(productName) {
+              cart = cart.filter(item => item.name !== productName);
+              updateCart();
+          }
+  
+          // Initialize the cart view
+          updateCart();
+      </script>
+  </body>
+  </html>
+  
+  <br>
+  <br>
+  
+      <!-- Agrega más lugares de venta aquí si lo deseas -->
+     
+      <footer>
+        <p>Derechos de autor &copy; 2024 Arroz con leche</p>
+    </footer>
+    
+    </div>
+  </div>
+  
+</body>
+
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón de Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .instagram-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+            background-size: cover;
+            border-radius: 50%;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .instagram-button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón de Instagram -->
+    <a href="https://www.instagram.com/el_chapeteado?igsh=MWJucHk0ZXp5OGdxOA==" target="_blank" class="instagram-button"></a>
+</body>
+</html>
